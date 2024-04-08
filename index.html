@@ -16,13 +16,13 @@
     </header>
 
     <main class="container">
-        <section>
-            <div class="row">
+        <section class="my-5">
+            <div class="row my-3">
                 <div class="display-6">
                     Formulário de Cadastro:
                 </div>
             </div>
-            <div class="row">
+            <div class="row my-3">
                 <div class="col-md-10 offset-md-1">
                     <form>
                         <div class="my-3 row">
@@ -53,6 +53,32 @@
                             </div>
                         </div>
 
+                        <div class="my-3 row">
+                            <label for="email" class="col-sm-2 col-form-label">Turno:</label>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="inputRadioTurno" id="turnoManha"
+                                        checked>
+                                    <label class="form-check-label" for="turnoManha">
+                                        Manhã
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="inputRadioTurno" id="turnoTarde">
+                                    <label class="form-check-label" for="turnoTarde">
+                                        Tarde
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="inputRadioTurno" id="turnoNoite">
+                                    <label class="form-check-label" for="turnoNoite">
+                                        Noite
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
                     </form>
                 </div>
             </div>
