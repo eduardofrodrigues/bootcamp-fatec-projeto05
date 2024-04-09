@@ -3,7 +3,7 @@ let alunos = [
     id: 1,
     name: "Eduardo Rodrigues",
     email: "contatoeduardofelipe@hotmail.com",
-    phone: "(15) 99999-9999",
+    phone: "15999999999",
     course: "Java",
     shift: "Manhã"
   }
