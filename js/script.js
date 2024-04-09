@@ -1,9 +1,11 @@
+$('#phone').mask('(00) 0000-00000');
+
 let alunos = [
   {
     id: 1,
     name: "Eduardo Rodrigues",
     email: "contatoeduardofelipe@hotmail.com",
-    phone: "15999999999",
+    phone: "(15) 9999-99999",
     course: "Java",
     shift: "Manhã"
   }
