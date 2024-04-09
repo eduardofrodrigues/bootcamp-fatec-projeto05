@@ -6,22 +6,6 @@ let alunos = [
     phone: "(15) 99999-9999",
     course: "Java",
     shift: "Manhã"
-  },
-  {
-    id: 2,
-    name: "Eduardo Rodrigues",
-    email: "contatoeduardofelipe@hotmail.com",
-    phone: "(15) 99999-9999",
-    course: "Angular",
-    shift: "Manhã"
-  },
-  {
-    id: 3,
-    name: "Eduardo Rodrigues",
-    email: "contatoeduardofelipe@hotmail.com",
-    phone: "(15) 99999-9999",
-    course: "HTML",
-    shift: "Manhã"
   }
 ]
 
@@ -42,5 +26,27 @@ function addRow(data) {
     </tr>
   `
 }
+function addStudent() {
 
-addRow();
+  const nameText = document.getElementById("name").value;
+  const emailText = document.getElementById("email").value;
+  const phoneText = document.getElementById("phone").value;
+  const courseText = document.getElementById("courses").value;
+  const shiftText = document.querySelector('input[name="inputRadioTurno"]:checked').value;
+
+  const aluno = {
+    id: (alunos.length + 1),
+    name: nameText,
+    email: emailText,
+    phone: phoneText,
+    course: courseText,
+    shift: shiftText
+  }
+
+  alunos.push(aluno);
+  addRow(aluno);
+
+  const form = document.getElementById("formNewStudent");
+  form.reset();
+
+}
